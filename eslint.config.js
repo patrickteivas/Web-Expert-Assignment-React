@@ -36,13 +36,10 @@ module.exports = [
       ],
     },
   },
-  {
-    ...stylistic.configs.customize({
-      arrowParens: true,
-      semi: true,
-    }),
-    // ignores: ['eslint.config.js']
-  },
+  stylistic.configs.customize({
+    arrowParens: true,
+    semi: true,
+  }),
   react.configs.flat.recommended,
   react.configs.flat['jsx-runtime'],
 
