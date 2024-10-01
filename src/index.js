@@ -4,7 +4,7 @@ import { RouterProvider, createBrowserRouter, createRoutesFromElements, Route } 
 import 'bootstrap/dist/css/bootstrap-reboot.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import './index.css';
-import App from './app/App';
+import Index from './pages/index/Index';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -12,7 +12,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route>
-      <Route path="/" element={<App />}></Route>
+      <Route path="/" element={<Index />}></Route>
     </Route>,
   ),
 );
