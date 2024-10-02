@@ -18,16 +18,9 @@ function Users({ openModalForUserId }) {
     }
 
     const normalizedSearch = search.toLowerCase().trim();
-    const { name, username, email, website, company } = user;
-    const { name: companyName } = company;
+    const { name } = user;
 
-    return (
-      name.toLowerCase().includes(normalizedSearch)
-      || username.toLowerCase().includes(normalizedSearch)
-      || email.toLowerCase().includes(normalizedSearch)
-      || website.toLowerCase().includes(normalizedSearch)
-      || companyName.toLowerCase().includes(normalizedSearch)
-    );
+    return name.toLowerCase().includes(normalizedSearch);
   };
 
   useEffect(() => {
